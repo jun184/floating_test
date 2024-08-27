@@ -1,0 +1,25 @@
+<!-- 캠페인명 -->
+<script type="text/javascript">
+
+// 대행사 광고 정보(iframe)
+var adUrl = "https://adf.acrosspf.com/adifr/22523.html?passback=";
+var adWidth = "300"; 
+var adHeight = "300";
+
+// 광고 설정
+var adMarginLeft = "130"; // 광고 위치 -> 정중앙기준 오른쪽
+var adMarginTop = "750";  // 광고 위치 -> 상단기준
+
+var btnRandom = true // 'true'-> 자동 / 'false' -> 'btnposition' 지정위치 노출
+var btnposition = "LT" // LT, LB, RT, RB / 'btnRandom' 옵션이 true 일경우 해당 옵션이 작동하지 않음
+var iframePB = false // true 설정시 아이프레임에선 'adMarginLeft','adMarginTop' 0으로 설정옵션
+
+var btnSizeWidth = 12 // 버튼 크기 너비
+var btnSizeHeight = 12 // 버튼 크기 높이
+var btnMargin = 10 // 버튼 여백
+
+var zIndex = 98 // 배너 z-index
+var adJSURL = "./script/floating.js"; // 실제 플로팅배너 URL
+
+document.write ("<SCR" + "IPT SRC='" + adJSURL + "'></SCR" + "IPT>");
+</script> 
