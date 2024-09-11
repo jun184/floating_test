@@ -13,12 +13,10 @@ if(typeof btnRandom !== "undefined"){
     selected = 'LT'
 }
 
-if(typeof iframePB !== "undefined" && iframePB == true){
-    if(self != top){ //현재 iframe창 일 경우
-        adMarginLeft = "0"; 
-        adMarginTop = "0";
-        wrapperWidth = "0px"
-    }
+if(self != top){ //현재 iframe창 일 경우
+    adMarginLeft = "0"; 
+    adMarginTop = "0";
+    wrapperWidth = "0px"
 }
 
 if (selected == 'LT') { //Left top
@@ -44,11 +42,9 @@ if(adType=="html"){ //ifrmae 형태로 표현되는 광고
     document.write('<a href="//adv.khan.co.kr/RealMedia/ads/click_lx.ads/%%PAGE%%/%%RAND%%/%%POS%%/%%CAMP%%/%%IMAGE%%/%%USER%%" target="_blank">');
     document.write('<img src="'+adUrl_img+'" width:'+adWidth+'px; height:'+adHeight+'px; border="0"></a>');
 }
-if(typeof iframePB !== "undefined" && iframePB == true){
-    if(self == top){ //현재창이 메인페이지인 경우에만 X버튼 적용
-        document.write('<div id="close" style="position:absolute; top:'+btnTop+'px; left:'+btnLeft+'px; display:block;">\n');
-        document.write('<a style="display: block;" href="javascript:floating_close();"><img src="https://advimg.khan.co.kr/RealMedia/ads/Creatives/khan/js_upload_NEW/close_1212_black_article.jpg" width="'+btnSizeWidth+'" height="'+btnSizeHeight+'" border="0" style="display: block;"></a></div>\n');
-    }
+if(self == top){ //현재창이 메인페이지인 경우에만 X버튼 적용
+    document.write('<div id="close" style="position:absolute; top:'+btnTop+'px; left:'+btnLeft+'px; display:block;">\n');
+    document.write('<a style="display: block;" href="javascript:floating_close();"><img src="https://advimg.khan.co.kr/RealMedia/ads/Creatives/khan/js_upload_NEW/close_1212_black_article.jpg" width="'+btnSizeWidth+'" height="'+btnSizeHeight+'" border="0" style="display: block;"></a></div>\n');
 }
 
 document.write('</div>\n');
